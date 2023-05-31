@@ -49,3 +49,28 @@ const swiperMain = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// Top Sales Slider
+
+const swiperTopSales = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+newWin = window.open(
+  "http://127.0.0.1:5500/index.html#",
+  "copperPro",
+  "resizable"
+);

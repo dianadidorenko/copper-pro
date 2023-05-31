@@ -71,6 +71,12 @@
   font-style: normal;
   font-weight: 600;
 }
+@font-face {
+  font-family: "Mont Heavy";
+  src: url("fonts/Mont-Heavy.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
 *,
 *::before,
 *::after {
@@ -159,6 +165,41 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
+}
+
+.page__title {
+  font-family: "Lighthaus Regular";
+  font-size: 50px;
+  line-height: 74.9%;
+  text-align: center;
+  color: var(--secondary-color);
+  padding-bottom: 40px;
+}
+
+.primary-button {
+  background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+  font-size: 18px;
+  line-height: 96.4%;
+  color: var(--primary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Mont Bold";
+  text-align: center;
+  padding: 16px 131px 17px 132px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.primary-button:hover {
+  -webkit-filter: contrast(1.3);
+          filter: contrast(1.3);
 }
 
 :root {
@@ -359,31 +400,8 @@ body {
 }
 
 .main-product-button {
-  background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
-  font-size: 18px;
-  line-height: 96.4%;
-  color: var(--primary-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: "Mont Bold";
-  text-align: center;
   max-width: 327px;
-  padding: 16px 131px 17px 132px;
   margin-bottom: 71px;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.main-product-button:hover {
-  -webkit-filter: contrast(1.3);
-          filter: contrast(1.3);
 }
 
 .main-swiper-pagination {
@@ -1026,15 +1044,6 @@ body {
           justify-content: center;
 }
 
-.our-production__title {
-  font-family: "Lighthaus Regular";
-  font-size: 50px;
-  line-height: 74.9%;
-  text-align: center;
-  color: var(--secondary-color);
-  padding-bottom: 40px;
-}
-
 .our-production__items {
   display: -ms-grid;
   display: grid;
@@ -1109,10 +1118,6 @@ body {
 
 .our-production__items .our-production__item:nth-child(6) .our-production__item-title {
   bottom: -5px;
-}
-
-.our-production__item-6 {
-  position: relative;
 }
 
 .our-production__item-30disc,
@@ -1190,7 +1195,7 @@ body {
   }
 }
 @media (max-width: 950px) {
-  .our-production__title {
+  .page__title {
     font-size: 40px;
     padding-bottom: 39px;
   }
@@ -1237,7 +1242,7 @@ body {
   .our-production__container {
     padding: 0 15px;
   }
-  .our-production__title {
+  .page__title {
     font-size: 30px;
   }
   .our-production__items {
@@ -1284,7 +1289,7 @@ body {
   }
 }
 @media (max-width: 400px) {
-  .our-production__title {
+  .page__title {
     font-size: 24px;
   }
   .our-production__item img {
@@ -1321,4 +1326,132 @@ body {
     top: 36px;
     right: 18px;
   }
+}
+.page__top-sales {
+  padding-top: 80px;
+  padding-bottom: 97px;
+  position: relative;
+}
+
+.top-sales {
+  background: url(img/INDEX/top-sales/bg.png);
+}
+
+.top-sales-swiper .swiper-slide {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 33px 1fr 33px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 33px;
+     -moz-column-gap: 33px;
+          column-gap: 33px;
+  padding-bottom: 57px;
+}
+
+.top-sales__item {
+  position: relative;
+}
+
+.top-sales-main-pic {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.top-sales__item-info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: var(--secondary-color);
+  padding-top: 36px;
+}
+
+.top-sales__item-title {
+  font-family: "Mont SemiBold";
+  font-size: 20px;
+  line-height: 96.4%;
+}
+
+.top-sales__item-price {
+  font-family: "Mont Heavy";
+  font-size: 30px;
+  line-height: 96.4%;
+}
+
+.favorite-icon-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 17px 10px 16px 10px;
+  background-color: #fff;
+}
+
+.top-sales-favorite-icon:hover {
+  background: url(img/INDEX/top-sales/gradient-favorite-icon.svg) no-repeat center;
+}
+
+.top-sales__button {
+  max-width: 327px;
+  margin: 42px auto 0 auto;
+  padding: 17px 70px 16px 70px;
+}
+
+.top-sales-swiper-pagination {
+  left: 0;
+}
+
+.top-sales-swiper-button-prev {
+  left: 0;
+  top: 40%;
+  padding: 11px 25px 11px 38px;
+  border: 1px solid var(--secondary-color);
+}
+
+.top-sales-swiper-button-next {
+  right: 0;
+  top: 40%;
+  padding: 11px 38px 11px 25px;
+  background: linear-gradient(-92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+}
+
+.top-sales-swiper-button-prev::after,
+.top-sales-swiper-button-next::after {
+  content: "";
+}
+
+.top-sales-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--secondary-color);
+  border-radius: 0;
+  opacity: 1;
+}
+
+.top-sales-swiper .swiper-pagination-bullet-active {
+  background: linear-gradient(65.81deg, #5e3928 -24.09%, #e4a16f 104.02%);
+  position: relative;
+}
+
+.top-sales-swiper .swiper-pagination-bullet-active::after {
+  content: url(img/INDEX/header-main/color-switch.svg);
+  position: absolute;
+  left: -5px;
+  top: 55px;
+}
+
+.top-sales-swiper .swiper-horizontal > .top-sales-swiper .swiper-pagination-bullets,
+.top-sales-swiper .swiper-pagination-bullets.swiper-pagination-horizontal,
+.top-sales-swiper .swiper-pagination-custom,
+.top-sales-swiper .swiper-pagination-fraction {
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60px;
+  bottom: 0;
 }
