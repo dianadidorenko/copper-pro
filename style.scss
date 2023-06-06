@@ -1277,12 +1277,12 @@ body {
   padding-top: 36px;
 }
 .top-sales__item-title {
-  font-family: "Mont SemiBold";
+  font-family: "Mont Book";
   font-size: 20px;
   line-height: 96.4%;
 }
 .top-sales__item-price {
-  font-family: "Mont Heavy";
+  font-family: "Mont Bold";
   font-size: 30px;
   line-height: 96.4%; // 29px
 }
@@ -1351,4 +1351,87 @@ body {
   transform: translate(-50%, -50%);
   width: 60px;
   bottom: 0;
+}
+
+@media (max-width: 1800px) {
+  .top-sales__container {
+    padding: 0 49px;
+  }
+  .top-sales-swiper .swiper-slide {
+    place-items: center;
+  }
+  .top-sales__item {
+    width: 446px;
+  }
+}
+@media (max-width: 1500px) {
+  .top-sales-main-pic {
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .top-sales__item {
+    width: 100%;
+  }
+}
+@media (max-width: 1300px) {
+  .top-sales-swiper .swiper-slide {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .top-sales__item-1 {
+    display: none;
+  }
+  .top-sales__item {
+    max-width: 400px;
+  }
+}
+@media (max-width: 1000px) {
+  .top-sales-swiper-button-prev,
+  .top-sales-swiper-button-next {
+    display: none;
+  }
+  .top-sales-swiper .swiper-slide {
+    column-gap: 20px;
+  }
+  .top-sales__item-title {
+    max-width: 169px;
+  }
+}
+@media (max-width: 768px) {
+  .page__top-sales {
+    padding-bottom: 80px;
+  }
+  .top-sales-favorite-icon {
+    width: 21px;
+    height: 24px;
+  }
+  .top-sales__item-info-block {
+    padding-top: 28.32px;
+  }
+  .favorite-icon-block {
+    padding: 13.49px 7.26px 12.7px 7.26px;
+  }
+}
+@media (max-width: 767.98px) {
+  .top-sales__container {
+    padding: 0 15px;
+  }
+  .top-sales__item-price,
+  .top-sales__item-title {
+    font-size: 20px;
+  }
+  .top-sales__item-price {
+    text-align: right;
+  }
+}
+@media (max-width: 590px) {
+  .top-sales-swiper .swiper-slide {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .top-sales__item-3 {
+    display: none;
+  }
+  .top-sales__button {
+    max-width: 290px;
+    padding: 17px 55px 16px 55px;
+  }
 }
