@@ -33,39 +33,39 @@ burgerMenu(".burger-menu");
 
 // Main Slider
 
-const swiperMain = new Swiper(".swiper", {
+const swiperMain = new Swiper(".main-swiper", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
 
   // If we need pagination
   pagination: {
-    el: ".swiper-pagination",
+    el: ".main-swiper-pagination",
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".main-swiper-button-next",
+    prevEl: ".main-swiper-button-prev",
   },
 });
 
 // Top Sales Slider
 
-const swiperTopSales = new Swiper(".swiper", {
+const swiperTopSales = new Swiper(".top-sales-swiper", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
 
   // If we need pagination
   pagination: {
-    el: ".swiper-pagination",
+    el: ".top-sales-swiper-pagination",
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".top-sales-swiper-button-next",
+    prevEl: ".top-sales-swiper-button-prev",
   },
 });
 
@@ -74,3 +74,28 @@ newWin = window.open(
   "copperPro",
   "resizable"
 );
+
+// Novelties Slider
+
+const swiperNovelties = new Swiper(".novelties-swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".novelties-swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".novelties-swiper-button-next",
+    prevEl: ".novelties-swiper-button-prev",
+  },
+});
+
+// newWin = window.open(
+//   "http://127.0.0.1:5500/index.html#",
+//   "copperPro",
+//   "resizable"
+// );
