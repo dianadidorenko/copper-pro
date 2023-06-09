@@ -132,6 +132,25 @@ const swiperSale = new Swiper(".sale-swiper", {
   },
 });
 
+// Feedback Slider
+
+const swiperFeedback = new Swiper(".feedback-swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".feedback-swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".feedback-swiper-button-next",
+    prevEl: ".feedback-swiper-button-prev",
+  },
+});
+
 // newWin = window.open(
 //   "http://127.0.0.1:5500/index.html#",
 //   "copperPro",
