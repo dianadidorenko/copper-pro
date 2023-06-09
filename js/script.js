@@ -94,6 +94,44 @@ const swiperNovelties = new Swiper(".novelties-swiper", {
   },
 });
 
+// We recommend Slider
+
+const swiperRecommend = new Swiper(".recommend-swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".recommend-swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".recommend-swiper-button-next",
+    prevEl: ".recommend-swiper-button-prev",
+  },
+});
+
+// Sale Slider
+
+const swiperSale = new Swiper(".sale-swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".sale-swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".sale-swiper-button-next",
+    prevEl: ".sale-swiper-button-prev",
+  },
+});
+
 // newWin = window.open(
 //   "http://127.0.0.1:5500/index.html#",
 //   "copperPro",

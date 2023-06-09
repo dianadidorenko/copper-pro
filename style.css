@@ -173,9 +173,25 @@ body {
   line-height: 74.9%;
   text-align: center;
   color: var(--secondary-color);
-  padding-bottom: 40px;
+  padding-bottom: 46px;
 }
 
+@media (max-width: 768px) {
+  .page__title {
+    font-size: 40px;
+    padding-bottom: 37px;
+  }
+}
+@media (max-width: 767.98px) {
+  .page__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 590px) {
+  .page__title {
+    padding-bottom: 23px;
+  }
+}
 .primary-button {
   background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
   font-size: 18px;
@@ -1191,10 +1207,6 @@ body {
   }
 }
 @media (max-width: 950px) {
-  .page__title {
-    font-size: 40px;
-    padding-bottom: 39px;
-  }
   .our-production__items {
     gap: 14.37px 14.85px;
   }
@@ -1237,9 +1249,6 @@ body {
   }
   .our-production__container {
     padding: 0 15px;
-  }
-  .page__title {
-    font-size: 30px;
   }
   .our-production__items {
     display: -ms-grid;
@@ -1325,7 +1334,7 @@ body {
 }
 .page__top-sales {
   padding-top: 80px;
-  padding-bottom: 97px;
+  padding-bottom: 80px;
   position: relative;
 }
 
@@ -1500,9 +1509,6 @@ body {
   }
 }
 @media (max-width: 768px) {
-  .page__top-sales {
-    padding-bottom: 80px;
-  }
   .top-sales-favorite-icon {
     width: 21px;
     height: 24px;
@@ -1515,6 +1521,10 @@ body {
   }
 }
 @media (max-width: 767.98px) {
+  .page__top-sales {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   .top-sales__container {
     padding: 0 15px;
   }
@@ -1544,7 +1554,7 @@ body {
 }
 .page__novelties {
   padding-top: 80px;
-  padding-bottom: 97px;
+  padding-bottom: 80px;
   position: relative;
 }
 
@@ -1622,6 +1632,10 @@ body {
   font-family: "Mont Bold";
   font-size: 30px;
   line-height: 96.4%;
+}
+
+.novelties__item-price-1 {
+  color: var(--red-tab);
 }
 
 .favorite-icon-block {
@@ -1757,9 +1771,6 @@ body {
   }
 }
 @media (max-width: 768px) {
-  .page__novelties {
-    padding-bottom: 80px;
-  }
   .novelties-favorite-icon {
     width: 21px;
     height: 24px;
@@ -1772,6 +1783,10 @@ body {
   }
 }
 @media (max-width: 767.98px) {
+  .page__novelties {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   .novelties__container {
     padding: 0 15px;
   }
@@ -1944,8 +1959,483 @@ body {
 }
 .page__recommend {
   padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
 }
 
-.page__title {
-  padding-bottom: 46px;
+.recommend-swiper .swiper-slide {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 33px 1fr 33px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 33px;
+     -moz-column-gap: 33px;
+          column-gap: 33px;
+  padding-bottom: 57px;
+}
+
+.recommend__item {
+  position: relative;
+}
+
+.recommend-main-pic {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.recommend__item-info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: var(--secondary-color);
+  padding-top: 36px;
+}
+
+.recommend__item-title {
+  font-family: "Mont Book";
+  font-size: 20px;
+  line-height: 96.4%;
+}
+
+.recommend__item-price {
+  font-family: "Mont Bold";
+  font-size: 30px;
+  line-height: 96.4%;
+}
+
+.recommend-favorite-icon:hover {
+  background: url(img/INDEX/top-sales/gradient-favorite-icon.svg) no-repeat center;
+}
+
+.recommend__button {
+  max-width: 327px;
+  margin: 42px auto 0 auto;
+  padding: 17px 70px 16px 70px;
+}
+
+.recommend-swiper-pagination {
+  left: 0;
+}
+
+.recommend-swiper-button-prev {
+  left: 0;
+  top: 40%;
+  padding: 11px 25px 11px 38px;
+  border: 1px solid var(--secondary-color);
+}
+
+.recommend-swiper-button-next {
+  right: 0;
+  top: 40%;
+  padding: 11px 38px 11px 25px;
+  border: 1px solid var(--secondary-color);
+}
+
+.recommend-swiper-button-prev::after,
+.recommend-swiper-button-next::after {
+  content: "";
+}
+
+.recommend-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--secondary-color);
+  border-radius: 0;
+  opacity: 1;
+}
+
+.recommend-swiper .swiper-pagination-bullet-active {
+  background: linear-gradient(65.81deg, #5e3928 -24.09%, #e4a16f 104.02%);
+  position: relative;
+}
+
+.recommend-swiper .swiper-pagination-bullet-active::after {
+  content: url(img/INDEX/header-main/color-switch.svg);
+  position: absolute;
+  left: -5px;
+  top: 55px;
+}
+
+.recommend-swiper .swiper-horizontal > .recommend-swiper .swiper-pagination-bullets,
+.recommend .swiper-pagination-bullets.swiper-pagination-horizontal,
+.recommend .swiper-pagination-custom,
+.recommend .swiper-pagination-fraction {
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60px;
+  bottom: 0;
+}
+
+@media (max-width: 1800px) {
+  .recommend__container {
+    padding: 0 49px;
+  }
+  .recommend-swiper .swiper-slide {
+    place-items: center;
+  }
+  .recommend__item {
+    width: 446px;
+  }
+}
+@media (max-width: 1500px) {
+  .recommend-main-pic {
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .recommend__item {
+    width: 100%;
+  }
+}
+@media (max-width: 1300px) {
+  .recommend-swiper .swiper-slide {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .recommend__item-1 {
+    display: none;
+  }
+  .recommend__item {
+    max-width: 400px;
+  }
+}
+@media (max-width: 1000px) {
+  .recommend-swiper-button-prev,
+.recommend-swiper-button-next {
+    display: none;
+  }
+  .recommend-swiper .swiper-slide {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+  }
+  .recommend__item-title {
+    max-width: 169px;
+  }
+}
+@media (max-width: 768px) {
+  .recommend-favorite-icon {
+    width: 21px;
+    height: 24px;
+  }
+  .recommend__item-info-block {
+    padding-top: 28.32px;
+  }
+}
+@media (max-width: 767.98px) {
+  .page__recommend {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .recommend__container {
+    padding: 0 15px;
+  }
+  .recommend__item-price,
+.recommend__item-title {
+    font-size: 20px;
+  }
+  .recommend__item-price {
+    text-align: right;
+  }
+  .recommend-favorite-icon:hover {
+    background: url(img/INDEX/top-sales/768px-favorite-gradient.svg) no-repeat center;
+  }
+}
+@media (max-width: 590px) {
+  .recommend-swiper .swiper-slide {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .recommend__item-3 {
+    display: none;
+  }
+  .recommend__button {
+    max-width: 290px;
+    padding: 17px 55px 16px 55px;
+  }
+}
+.page__sale {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.sale {
+  background: url(img/INDEX/top-sales/bg.png);
+}
+
+.sale-swiper .swiper-slide {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 33px 1fr 33px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 33px;
+     -moz-column-gap: 33px;
+          column-gap: 33px;
+  padding-bottom: 57px;
+}
+
+.sale__item {
+  position: relative;
+}
+
+.sale-main-pic {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sale__item-info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: var(--secondary-color);
+  padding-top: 36px;
+}
+
+.sale__item-title {
+  font-family: "Mont Book";
+  font-size: 20px;
+  line-height: 96.4%;
+}
+
+.sale__item-price {
+  font-family: "Mont Bold";
+  font-size: 30px;
+  line-height: 96.4%;
+}
+
+.favorite-icon-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 17px 10px 16px 10px;
+  background-color: #fff;
+}
+
+.sale-favorite-icon:hover {
+  background: url(img/INDEX/top-sales/gradient-favorite-icon.svg) no-repeat center;
+}
+
+.sale__button {
+  max-width: 327px;
+  margin: 42px auto 0 auto;
+  padding: 17px 70px 16px 70px;
+}
+
+.sale__item {
+  position: relative;
+}
+
+.novelties__item-info-block-1 {
+  position: relative;
+}
+
+.sale__item-price-crossed {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  font-size: 20px;
+  line-height: 96.4%;
+  font-family: "Mont SemiBold";
+  color: var(--secondary-color);
+  opacity: 0.3;
+}
+
+.sale__item::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 45px;
+  width: 95px;
+  height: 1px;
+  background-color: var(--secondary-color);
+  opacity: 0.3;
+  z-index: 4;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+.sale__item-title {
+  font-family: "Mont Book";
+  font-size: 20px;
+  line-height: 96.4%;
+}
+
+.sale__item-price {
+  font-family: "Mont Bold";
+  font-size: 30px;
+  line-height: 96.4%;
+}
+
+.sale__item-price {
+  color: var(--red-tab);
+}
+
+.favorite-icon-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 17px 10px 16px 10px;
+  background-color: #fff;
+}
+
+.sale-swiper-pagination {
+  left: 0;
+}
+
+.sale-swiper-button-prev {
+  left: 0;
+  top: 40%;
+  padding: 11px 25px 11px 38px;
+  border: 1px solid var(--secondary-color);
+}
+
+.sale-swiper-button-next {
+  right: 0;
+  top: 40%;
+  padding: 11px 38px 11px 25px;
+  background: linear-gradient(-92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+}
+
+.sale-swiper-button-prev::after,
+.sale-swiper-button-next::after {
+  content: "";
+}
+
+.sale-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--secondary-color);
+  border-radius: 0;
+  opacity: 1;
+}
+
+.sale-swiper .swiper-pagination-bullet-active {
+  background: linear-gradient(65.81deg, #5e3928 -24.09%, #e4a16f 104.02%);
+  position: relative;
+}
+
+.sale-swiper .swiper-pagination-bullet-active::after {
+  content: url(img/INDEX/header-main/color-switch.svg);
+  position: absolute;
+  left: -5px;
+  top: 55px;
+}
+
+.sale-swiper .swiper-horizontal > .sale-swiper .swiper-pagination-bullets,
+.sale-swiper .swiper-pagination-bullets.swiper-pagination-horizontal,
+.sale-swiper .swiper-pagination-custom,
+.sale-swiper .swiper-pagination-fraction {
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60px;
+  bottom: 0;
+}
+
+@media (max-width: 1800px) {
+  .sale__container {
+    padding: 0 49px;
+  }
+  .sale-swiper .swiper-slide {
+    place-items: center;
+  }
+  .sale__item {
+    width: 446px;
+  }
+}
+@media (max-width: 1500px) {
+  .sale-main-pic {
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .sale__item {
+    width: 100%;
+  }
+}
+@media (max-width: 1300px) {
+  .sale-swiper .swiper-slide {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sale__item-1 {
+    display: none;
+  }
+  .sale__item {
+    max-width: 400px;
+  }
+}
+@media (max-width: 1000px) {
+  .sale-swiper-button-prev,
+.sale-swiper-button-next {
+    display: none;
+  }
+  .sale-swiper .swiper-slide {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+  }
+  .sale__item-title {
+    max-width: 169px;
+  }
+}
+@media (max-width: 768px) {
+  .sale-favorite-icon {
+    width: 21px;
+    height: 24px;
+  }
+  .sale__item-info-block {
+    padding-top: 28.32px;
+  }
+  .favorite-icon-block {
+    padding: 13.49px 7.26px 12.7px 7.26px;
+  }
+}
+@media (max-width: 767.98px) {
+  .page__sale {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .sale__container {
+    padding: 0 15px;
+  }
+  .sale__item-price,
+.sale__item-title {
+    font-size: 20px;
+  }
+  .sale__item-price {
+    text-align: right;
+  }
+  .sale-favorite-icon:hover {
+    background: url(img/INDEX/top-sales/768px-favorite-gradient.svg) no-repeat center;
+  }
+}
+@media (max-width: 590px) {
+  .sale-swiper .swiper-slide {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sale__item-3 {
+    display: none;
+  }
+  .sale__button {
+    max-width: 290px;
+    padding: 17px 55px 16px 55px;
+  }
 }
