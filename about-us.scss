@@ -1,0 +1,310 @@
+@import url(style.scss);
+
+.about-us-title {
+  font-family: "Lighthaus Regular";
+  font-size: 50px;
+  line-height: 105.9%; // 53px
+  color: var(--secondary-color);
+  max-width: 310px;
+}
+@media (max-width: 768px) {
+  .about-us-title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .about-us-title {
+    font-size: 20px;
+  }
+}
+
+// ========================================================================================
+.header__container {
+  position: static;
+  background: url(img/ABOUT-US/header/bg.png) no-repeat center/cover;
+  background-position: 20% 50%;
+  padding-bottom: 53px;
+}
+.shopping-cart-link {
+  position: relative;
+}
+.quantity-number {
+  position: absolute;
+  top: 20px;
+  left: 40%;
+  z-index: 3;
+  padding: 0 !important;
+}
+@media (max-width: 767.98px) {
+  .header__container {
+    background: url(img/ABOUT-US/header/320px/BG.png) no-repeat top/cover;
+    padding: 29px 15px;
+    display: block;
+  }
+  .quantity-number {
+    display: none;
+  }
+  .icon-menu-block {
+    column-gap: 14px;
+  }
+}
+
+// ========================================================================================
+.about-us {
+  background: url(img/ABOUT-US/main/bg.png) no-repeat center/cover;
+}
+.about-us__text-block {
+  padding-top: 39px;
+  padding-bottom: 159px;
+}
+.about-us__navigation {
+  font-family: "Mont Light";
+  font-size: 18px;
+  line-height: 96.4%; // 17px
+  color: var(--secondary-color);
+  span {
+    font-family: "Mont SemiBold";
+  }
+}
+.about-us__title {
+  font-family: "Lighthaus Regular";
+  padding-top: 128px;
+  padding-bottom: 53px;
+  font-size: 100px;
+  line-height: 74.9%; // 75px
+  color: var(--secondary-color);
+}
+.about-us__quote {
+  font-family: "Mont SemiBold Italic";
+  display: flex;
+  align-items: start;
+  column-gap: 35px;
+  font-size: 50px;
+  line-height: 96.4%; // 48px
+  background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  padding-top: 50px;
+  padding-bottom: 35px;
+  max-width: 640px;
+  border-top: 1px solid #000;
+}
+.about-us__quote img:nth-child(2) {
+  align-self: self-end;
+}
+.about-us__name-and-sign-block {
+  padding-top: 50px;
+  padding-bottom: 35px;
+  display: flex;
+  column-gap: 46px;
+  align-items: center;
+}
+.about-us__name {
+  font-family: "Mont Heavy";
+  font-size: 30px;
+  line-height: 96.4%; // 29px
+  background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.components-768px {
+  display: none;
+}
+
+@media (max-width: 1450px) {
+  .about-us {
+    background: url(img/ABOUT-US/main/bg.png) no-repeat center/cover;
+  }
+}
+@media (max-width: 768px) {
+  .about-us {
+    background: url(img/ABOUT-US/main/768px/bg.png) no-repeat center/cover;
+  }
+  .about-us__container {
+    position: relative;
+  }
+  .about-us__text-block {
+    padding-bottom: 339px;
+  }
+  .components-768px {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .about-us__text-block {
+    padding-top: 30px;
+  }
+  .about-us__title {
+    padding-top: 100px;
+    padding-bottom: 28px;
+    font-size: 60px;
+  }
+  .about-us__quote {
+    padding-top: 41px;
+    padding-bottom: 55px;
+    font-size: 30px;
+    max-width: 440px;
+  }
+  .about-us__name {
+    font-size: 18px;
+  }
+  .about-us__sign {
+    width: 145px;
+  }
+  .about-us__name-and-sign-block {
+    column-gap: 32px;
+  }
+}
+@media (max-width: 650px) {
+  .about-us__title {
+    padding-top: 40px;
+    padding-bottom: 21px;
+  }
+  .about-us__quote {
+    padding-top: 0;
+    padding-bottom: 0;
+    span {
+      padding-top: 40px;
+    }
+  }
+  .about-us__text-block {
+    padding-bottom: 400px;
+  }
+  .about-us__quote img:nth-child(1) {
+    padding-top: 18px;
+  }
+  .about-us-second-quote {
+    padding-top: 83px;
+  }
+  .about-us__name-and-sign-block {
+    padding-top: 13px;
+  }
+}
+@media (max-width: 450px) {
+  .about-us__quote span {
+    font-size: 20px;
+    padding-left: 18px;
+  }
+  .about-us__quote {
+    column-gap: 0;
+  }
+  .components-768px {
+    width: 289px;
+  }
+  .about-us__text-block {
+    padding-bottom: 300px;
+  }
+  .about-us__sign {
+    width: 136px;
+  }
+  .components-768px {
+    right: -20px;
+  }
+}
+
+// ========================================================================================
+.page__our-clients {
+}
+.our-clients {
+}
+.our-clients__container {
+}
+.our-clients__body {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 138px;
+  padding-bottom: 140px;
+}
+.our-clients__body-left-part {
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+}
+.about-us-title {
+}
+.our-clients__body-left-part-text {
+  font-family: "Mont Light";
+  font-size: 20px;
+  line-height: 124.9%; // 25px
+  color: var(--secondary-color);
+  max-width: 517px;
+}
+.our-clients__body-right-part {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+.our-clients__body-right-part-title {
+  font-family: "Mont Heavy";
+  font-size: 50px;
+  line-height: 96.4%; // 45px
+  background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.our-clients__body-right-part-number {
+  font-family: "Mont Heavy";
+  font-size: 250px;
+  line-height: 96.4%; // 241px
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0.3);
+  background-image: url(img/ABOUT-US/our-clients/01.png);
+  background-repeat: repeat;
+}
+
+@media (max-width: 1800px) {
+  .our-clients__body {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    row-gap: 90px;
+  }
+  .about-us-title {
+    max-width: 100%;
+  }
+}
+@media (max-width: 830px) {
+  .our-clients__body {
+    padding-top: 80px;
+    padding-bottom: 55px;
+  }
+  .our-clients__body-right-part {
+    row-gap: 5px;
+  }
+  .our-clients__body-right-part-title {
+    font-size: 30px;
+  }
+  .our-clients__body-right-part-number {
+    font-size: 200px;
+  }
+}
+@media (max-width: 767.98px) {
+  .our-clients__body {
+    padding-top: 40px;
+    padding-bottom: 23px;
+    row-gap: 55px;
+  }
+  .our-clients__body-left-part {
+    row-gap: 17px;
+  }
+  .our-clients__body-left-part-text {
+    font-size: 16px;
+  }
+  .our-clients__body-right-part {
+    row-gap: 12px;
+  }
+  .our-clients__body-right-part-title {
+    font-size: 18px;
+  }
+  .our-clients__body-right-part-number {
+    font-size: 100px;
+  }
+}

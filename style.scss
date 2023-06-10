@@ -73,10 +73,16 @@
   font-weight: 600;
 }
 @font-face {
+  font-family: "Mont SemiBold Italic";
+  src: url("fonts/Mont-SemiBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
   font-family: "Mont Heavy";
   src: url("fonts/Mont-Heavy.ttf") format("truetype");
   font-style: normal;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 *,
@@ -165,7 +171,7 @@ body {
 .page__title {
   font-family: "Lighthaus Regular";
   font-size: 50px;
-  line-height: 74.9%; // 37px
+  line-height: 120%; // 37px
   text-align: center;
   color: var(--secondary-color);
   padding-bottom: 46px;
@@ -626,6 +632,10 @@ body {
   .favorite-icon-mobile,
   .profile-icon-mobile {
     display: block;
+  }
+  .icon-menu-block img,
+  .icon-menu-block a:nth-child(3) img {
+    padding: 30px 7px 9.25px 7px;
   }
   .icon-menu-block {
     right: 74px;
