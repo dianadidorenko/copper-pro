@@ -73,7 +73,7 @@
 }
 @font-face {
   font-family: "Mont SemiBold Italic";
-  src: url("fonts/Mont-SemiBoldItalic.ttf") format("truetype");
+  src: url("fonts/Mont-SemiBoldItalic.woff2") format("truetype");
   font-style: normal;
   font-weight: 600;
 }
