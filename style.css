@@ -2695,6 +2695,7 @@ body {
 }
 
 .why-us__read-more {
+  font-family: "Mont Heavy";
   background: linear-gradient(65.81deg, #5e3928 -24.09%, #e4a16f 104.02%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2714,13 +2715,6 @@ body {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-}
-@media (max-width: 450px) {
-  .why-us__items {
-    -ms-grid-columns: 1fr 20px 1fr;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px 20px;
-  }
   .why-us-title {
     font-size: 16px;
   }
@@ -2729,5 +2723,222 @@ body {
   }
   .why-us__read-more {
     font-size: 14px;
+  }
+}
+@media (max-width: 450px) {
+  .why-us__items {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 20px;
+    justify-items: center;
+  }
+}
+.footer {
+  background: url(img/INDEX/footer/bg.png) no-repeat center/cover;
+  position: relative;
+}
+
+.text-up {
+  font-family: "Mont Heavy";
+  position: absolute;
+  bottom: 39px;
+  right: 92px;
+  padding: 16px 44px 17px 27px;
+  background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: var(--background-color);
+  font-size: 18px;
+  line-height: 96.4%;
+  text-align: center;
+}
+
+.footer__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.footer__body a {
+  color: var(--background-color);
+}
+
+.footer__body-left-part-copy {
+  font-size: 14px;
+  line-height: 134.4%;
+  color: #adadad;
+  padding-top: 24px;
+  padding-bottom: 21px;
+  max-width: 214px;
+}
+
+.footer__body-left-part-politics {
+  font-size: 14px;
+  line-height: 134.4%;
+  text-decoration-line: underline;
+}
+
+.footer__body-right-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__body-right-part .footer__menu:nth-child(1) {
+  padding-right: 137px;
+}
+
+.footer__body-right-part .footer__menu:nth-child(2) {
+  padding-right: 70px;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 15px;
+}
+
+.footer__menu-title {
+  font-family: "Mont Heavy";
+  font-size: 18px;
+  line-height: 96.4%;
+}
+
+.footer__link {
+  font-family: "Mont Thin";
+  font-size: 16px;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 15px;
+}
+
+.contacts > a,
+p {
+  font-family: "Mont Thin";
+}
+
+.contacts-title {
+  font-family: "Mont Heavy";
+}
+
+.contacts-socs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 18px;
+     -moz-column-gap: 18px;
+          column-gap: 18px;
+}
+
+@media (min-width: 1921px) {
+  .footer {
+    background: url(img/INDEX/footer/bg.png) no-repeat center/cover;
+  }
+}
+@media (max-width: 1250px) {
+  .footer__body-right-part .footer__menu:nth-child(1) {
+    padding-right: 70px;
+  }
+}
+@media (max-width: 900px) {
+  .footer__container {
+    padding: 0 49px;
+  }
+  .footer__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 48px;
+  }
+  .footer__link {
+    font-size: 14px;
+  }
+  .contacts > a,
+p {
+    font-size: 14px;
+  }
+  .contacts-title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .footer__body-right-part {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 33px;
+  }
+  .text-up {
+    bottom: 64px;
+    right: 0;
+    padding: 16px 93px 17px 27px;
+  }
+  .contacts-address {
+    max-width: 132px;
+  }
+}
+@media (max-width: 590px) {
+  .footer__container {
+    padding: 0 15px;
+  }
+  .footer__body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 439px) {
+  .footer__body {
+    row-gap: 28px;
+  }
+  .footer__body-left-part-copy {
+    font-size: 12px;
+    max-width: 100%;
+  }
+  .footer__menu-title,
+.contacts-title {
+    font-size: 16px;
+  }
+  .footer__body-left-part-politics {
+    font-size: 12px;
+  }
+  .footer__body-left-part-copy {
+    padding-top: 17px;
+    padding-bottom: 6px;
+  }
+  .footer__body-right-part .footer__menu:nth-child(1) {
+    padding-right: 32px;
+  }
+  .footer__body-right-part .footer__menu:nth-child(2) {
+    padding-right: 0;
+  }
+}
+@media (max-width: 320px) {
+  .text-up {
+    right: -47px;
   }
 }
