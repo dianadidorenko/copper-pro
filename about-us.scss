@@ -14,6 +14,11 @@
 }
 @media (max-width: 767.98px) {
   .about-us-title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .about-us-title {
     font-size: 20px;
   }
 }
@@ -79,6 +84,11 @@
   display: flex;
   align-items: start;
   column-gap: 35px;
+  padding-top: 50px;
+  padding-bottom: 35px;
+  border-top: 1px solid #000;
+}
+.about-us__quote span {
   font-size: 50px;
   line-height: 96.4%; // 48px
   background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
@@ -86,9 +96,6 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  padding-top: 50px;
-  padding-bottom: 35px;
-  border-top: 1px solid #000;
 }
 .about-us__quote img:nth-child(2) {
   align-self: self-end;
@@ -138,7 +145,7 @@
   .about-us__text-block {
     padding-top: 30px;
   }
-  .about-us__title {
+  .about-us .about-us__title {
     padding-top: 100px;
     padding-bottom: 28px;
     font-size: 60px;
@@ -147,7 +154,10 @@
     padding-top: 41px;
     padding-bottom: 55px;
     font-size: 30px;
-    max-width: 440px;
+    max-width: 100%;
+  }
+  .about-us-second-quote {
+    padding-top: 90px;
   }
   .about-us__name {
     font-size: 18px;
@@ -165,32 +175,29 @@
     padding-bottom: 21px;
   }
   .about-us__quote {
-    padding-top: 0;
+    padding-top: 40px;
     padding-bottom: 0;
     span {
-      padding-top: 40px;
+      font-size: 20px;
+      padding-top: 30px;
     }
   }
   .about-us__text-block {
     padding-bottom: 400px;
   }
   .about-us__quote img:nth-child(1) {
-    padding-top: 18px;
+    padding-top: 0;
   }
   .about-us-second-quote {
-    padding-top: 83px;
+    padding-top: 65px;
   }
   .about-us__name-and-sign-block {
     padding-top: 13px;
   }
 }
 @media (max-width: 450px) {
-  .about-us__quote span {
-    font-size: 20px;
-    padding-left: 18px;
-  }
   .about-us__quote {
-    column-gap: 0;
+    column-gap: 18px;
   }
   .components-768px {
     width: 289px;
@@ -297,5 +304,310 @@
   }
   .our-clients__body-right-part-number {
     font-size: 100px;
+  }
+}
+
+// ========================================================================================
+.page__our-history {
+  position: relative;
+  background: url(img/ABOUT-US/our-history/01.png) no-repeat center/cover;
+}
+.our-history {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.our-history__container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.our-history .about-us-title {
+  color: var(--background-color);
+  text-align: center;
+  padding-bottom: 28px;
+}
+.our-history__body {
+  display: flex;
+  justify-content: center;
+  column-gap: 31px;
+}
+.our-history__body p {
+  font-family: "Mont Thin";
+  font-size: 16px;
+  line-height: 115%; // 21 px
+  color: var(--background-color);
+}
+.our-history__body-left-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  max-width: 445px;
+}
+.our-history__body-right-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  max-width: 445px;
+}
+.our-history__copper-pro {
+  font-family: "Lighthaus Regular";
+  position: absolute;
+  left: -195px;
+  bottom: 215px;
+  font-size: 155px;
+  line-height: 74.9%; // 116px
+  color: var(--background-color);
+  transform: rotate(-90deg);
+}
+
+@media (max-width: 1450px) {
+  .our-history__copper-pro {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .our-history__body {
+    column-gap: 20px;
+  }
+  .our-history__body p span {
+    font-family: "Mont Thin";
+  }
+  .our-history__body p {
+    font-family: "Mont Light";
+    line-height: 117%; // 21 px
+  }
+  .our-history__body-left-block,
+  .our-history__body-right-block {
+    max-width: 324px;
+  }
+}
+@media (max-width: 767.98px) {
+  .our-history__body {
+    flex-direction: column;
+    align-items: center;
+  }
+  .our-history__body-left-block,
+  .our-history__body-right-block {
+    max-width: 450px;
+  }
+  .our-history {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .our-history__body p {
+    font-size: 14px;
+  }
+}
+
+// ========================================================================================
+.page__our-geography {
+  position: relative;
+}
+.our-geography img {
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.our-geography__body {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+.our-geography .about-us-title {
+  padding-bottom: 40px;
+}
+.our-geography__text {
+  font-family: "Mont Light";
+  font-size: 20px;
+  line-height: 124.9%; // 25px
+  max-width: 365px;
+  color: var(--secondary-color);
+}
+.location-image2 {
+  display: none;
+}
+@media (max-width: 1600px) {
+  .our-geography__body {
+    text-align: center;
+    top: 17.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .location-image1 {
+    display: none;
+  }
+  .location-image2 {
+    display: block;
+  }
+  .our-geography__text {
+    max-width: 607px;
+    text-align: center;
+  }
+}
+@media (max-width: 1000px) {
+  .our-geography .about-us-title {
+    padding-bottom: 30px;
+  }
+  .our-geography__body {
+    text-align: center;
+    align-items: center;
+    top: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .our-geography__body {
+    width: 100%;
+    padding: 0 20px;
+    top: 18%;
+  }
+  .our-geography__text {
+    font-size: 16px;
+    max-width: 580px;
+  }
+}
+@media (max-width: 590px) {
+  .our-geography .about-us-title {
+    padding-bottom: 10px;
+  }
+  .our-geography__body {
+    top: 13%;
+  }
+  .location-image2 {
+    height: 690px;
+  }
+}
+@media (max-width: 320px) {
+  .our-geography__text {
+    font-size: 15px;
+  }
+}
+
+// ========================================================================================
+.page__our-values {
+}
+.our-values {
+}
+.our-values__container {
+}
+.our-values .about-us-title {
+  max-width: 292px;
+}
+.our-values__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 31px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: var(--secondary-color);
+}
+.our-values__body-left-part img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.our-values__body-right-part {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.our-values__body-right-part-text {
+  font-family: "Mont Light";
+  font-size: 20px;
+  line-height: 124.9%;
+  max-width: 485px;
+}
+.our-values__body-right-part-values-items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.our-values__body-right-part-values-item {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.our-values__body-right-part-values-item-image {
+}
+.our-values__body-right-part-values-item-text p {
+  font-family: "Mont Book";
+  font-size: 25px;
+  line-height: 96.4%; // 24px
+}
+.our-values-quality {
+  max-width: 203px;
+}
+
+@media (max-width: 768px) {
+  .our-values__body {
+    display: flex;
+    align-items: self-start;
+    column-gap: 35px;
+  }
+  .our-values__body-right-part-text {
+    font-size: 16px;
+  }
+  .our-values__body-right-part {
+    row-gap: 11px;
+  }
+  .our-values__body-right-part-values-item-image img {
+    width: 50px;
+    height: 50px;
+  }
+  .our-values__body-right-part-values-item-text p {
+    font-size: 16px;
+    font-family: "Mont Semibold";
+  }
+  .our-values__body-right-part-values-item {
+    column-gap: 16px;
+  }
+  .our-values__body-right-part-values-items {
+    padding-top: 30px;
+    row-gap: 11px;
+  }
+  .our-values__body-left-part {
+    max-width: 310px;
+    position: relative;
+  }
+  .our-values__body-left-part::after {
+    position: absolute;
+    content: url(img/ABOUT-US/our-values/COPPER-PRO.svg);
+    bottom: 0;
+    right: 0;
+  }
+}
+@media (max-width: 520px) {
+  .our-values__body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 28px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .our-values__body-right-part {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .our-values__body-right-part-values-items {
+    max-width: 300px;
+    align-items: start;
+  }
+  .our-values__body-right-part-values-items,
+  .our-values__body-right-part-values-item {
+    justify-content: center;
+  }
+  .our-values-quality {
+    max-width: 132px;
+    text-align: left;
+  }
+}
+@media (max-width: 320px) {
+  .our-values__body-right-part-text {
+    font-size: 15px;
   }
 }

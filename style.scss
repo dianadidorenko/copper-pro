@@ -241,14 +241,14 @@ body {
   display: flex;
   column-gap: 50px;
 }
-.menu__link {
+header .menu__link {
   font-family: "Mont SemiBold";
   color: var(--primary-color);
   font-size: 16px;
   line-height: 96.4%;
   transition: all 0.3s ease 0s;
 }
-.menu__link:hover {
+header .menu__link:hover {
   background: linear-gradient(92.09deg, #5e3928 -79.4%, #e4a16f 84.12%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -691,25 +691,16 @@ body {
     position: relative;
     letter-spacing: 2px;
   }
-  .burger-menu_active .menu__link::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -5px;
-    width: 5px;
-    height: 0;
-    background-color: var(--primary-color);
-    border-radius: 50%;
+  .burger-menu_active .menu__link:hover {
+    background: linear-gradient(0deg, #5e3928 -79.4%, #ffffff 84.12%);
     transition: all 0.3s ease 0s;
-  }
-  .burger-menu_active .menu__link:hover::after {
-    height: 5px;
-    display: block;
-    transition: all 0.3s ease 0s;
-  }
-  .burger-menu_active .burger-menu__nav {
-    top: 95px;
-    left: 40%;
+    text-decoration: underline;
+    color: var(--background-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration-color: var(--background-color) !important;
+    text-decoration: underline;
   }
   .burger-menu__lines,
   .burger-menu__lines::before,
