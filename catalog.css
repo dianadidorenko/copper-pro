@@ -1,0 +1,367 @@
+@import url(style.scss);
+.catalog-navigation__text-block {
+  padding-top: 31px;
+}
+
+.catalog-navigation__navigation {
+  font-family: "Mont Light";
+  font-size: 18px;
+  line-height: 96.4%;
+  color: var(--secondary-color);
+  padding-bottom: 23px;
+}
+.catalog-navigation__navigation span {
+  font-family: "Mont SemiBold";
+}
+
+.catalog-navigation__title {
+  font-family: "Lighthaus Regular";
+  font-size: 50px;
+  line-height: 105.9%;
+  color: var(--secondary-color);
+  padding-bottom: 31px;
+}
+
+.catalog-navigation__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px 30px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.catalog-navigation__item {
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.catalog-navigation__item:hover {
+  -webkit-box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-navigation__item p {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 3;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  font-family: "Mont Regular";
+  font-size: 20px;
+  line-height: 96.4%;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.catalog-navigation__item p:hover {
+  font-family: "Mont SemiBold";
+  cursor: pointer;
+}
+
+.our-production__item-overlay1 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  background: linear-gradient(351.3deg, rgba(203, 141, 98, 0) 33.24%, #cb8d62 104.72%);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.our-production__item-overlay2 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 44, 38, 0.5)), to(rgba(7, 44, 38, 0)));
+  background: linear-gradient(180deg, rgba(7, 44, 38, 0.5) 0%, rgba(7, 44, 38, 0) 100%);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.catalog-navigation__item-img1-320px,
+.catalog-navigation__item-img2-320px {
+  display: none;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .catalog-navigation__navigation {
+    padding-bottom: 34px;
+  }
+  .catalog-navigation__title {
+    font-size: 60px;
+  }
+  .catalog-navigation__items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .search-and-sort-block {
+    padding-top: 21px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .catalog-navigation__title {
+    font-size: 40px;
+  }
+  .catalog-navigation__item img {
+    max-width: 300px;
+    width: 100%;
+  }
+  .catalog-navigation__item p {
+    font-size: 16px;
+  }
+  .our-production__item-overlay1,
+.catalog-navigation-img2 {
+    max-width: 300px;
+    max-height: 147px;
+  }
+  .catalog-navigation-img2 {
+    width: 300px;
+  }
+  .our-production__item-overlay2 {
+    max-width: 300px;
+    max-height: 147px;
+  }
+  .catalog-navigation__items {
+    place-items: center;
+  }
+}
+@media (max-width: 400px) {
+  .catalog-navigation__item-img1,
+.catalog-navigation__item-img2 {
+    display: none;
+  }
+  .catalog-navigation__item-img1-320px,
+.catalog-navigation__item-img2-320px {
+    display: block;
+  }
+  .catalog-navigation__item p {
+    font-size: 12px;
+    width: 100%;
+  }
+  .catalog-navigation__items {
+    gap: 10px 20px;
+  }
+  .catalog-navigation__title {
+    font-size: 24px;
+  }
+}
+.page__catalog-gallery {
+  padding-bottom: 80px;
+}
+
+.search-and-sort-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 36px;
+}
+
+.sort-item span {
+  font-family: "Mont Bold";
+  font-size: 20px;
+  line-height: 96.4%;
+}
+
+.sort-item p:nth-child(1) {
+  font-family: "Mont Regular";
+  font-size: 20px;
+}
+
+.search-item input {
+  outline: none;
+  font-size: 20px;
+  line-height: 96.4%;
+  border-bottom: 1px solid #031412;
+  padding: 5px 0 5px 0;
+  max-width: 209px;
+  background: url(img/CATALOG/Gallery/search-icon.svg) 190px no-repeat;
+}
+
+.sort-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 18px;
+     -moz-column-gap: 18px;
+          column-gap: 18px;
+  color: var(--secondary-color);
+}
+
+.sort-item img {
+  cursor: pointer;
+}
+
+.sort-item-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+}
+
+.catalog-gallery-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 44px;
+  padding-bottom: 54px;
+}
+
+.catalog-gallery-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 9px;
+     -moz-column-gap: 9px;
+          column-gap: 9px;
+}
+
+.catalog-gallery-pagination .active {
+  color: white;
+  padding: 12px 14px;
+  background: linear-gradient(-92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+}
+
+.catalog-gallery-pagination p {
+  padding: 12px;
+  font-family: "Mont SemiBold";
+  color: #b3b9b8;
+  font-size: 25px;
+  line-height: 96.4%;
+  border: 1px solid #b3b9b8;
+}
+
+.catalog-gallery-pagination img {
+  padding: 15px 10px;
+  border: 1px solid #b3b9b8;
+}
+
+.display-768px {
+  display: none;
+}
+
+@media (max-width: 1800px) {
+  .catalog-gallery__container {
+    padding: 0 49px;
+  }
+  .catalog-gallery-items {
+    place-items: center;
+  }
+  .search-and-sort-block {
+    max-width: 1600px;
+    margin: auto;
+  }
+}
+@media (max-width: 1300px) {
+  .catalog-gallery-items {
+    -ms-grid-columns: 1fr 30px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+    row-gap: 44px;
+    padding-bottom: 54px;
+  }
+  .top-sales__item1 {
+    display: none;
+  }
+  .display-768px {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .catalog-gallery-items {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 26px;
+    padding-bottom: 36px;
+  }
+  .top-sales-favorite-icon {
+    width: 21px;
+    height: 24px;
+  }
+  .top-sales__item-info-block {
+    padding-top: 28.32px;
+  }
+  .favorite-icon-block {
+    padding: 13.49px 7.26px 12.7px 7.26px;
+  }
+}
+@media (max-width: 767.98px) {
+  .catalog-gallery__container {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 561px) {
+  .top-sales__item2 {
+    display: none;
+  }
+  .catalog-gallery-items {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    padding-bottom: 17px;
+  }
+  .search-and-sort-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+    padding-top: 21px;
+    padding-bottom: 20px;
+  }
+  .sort-item p:nth-child(1),
+.sort-item span {
+    font-size: 16px;
+  }
+  .page__catalog-gallery {
+    padding-bottom: 40px;
+  }
+}

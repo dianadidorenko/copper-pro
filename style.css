@@ -914,6 +914,9 @@ header .menu__link:hover {
   }
 }
 @media (max-width: 550px) {
+  .burger-menu_active .menu__link {
+    font-size: 25px;
+  }
   .main-title {
     font-size: 30px;
     padding-bottom: 20px;

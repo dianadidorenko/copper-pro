@@ -69,12 +69,6 @@ const swiperTopSales = new Swiper(".top-sales-swiper", {
   },
 });
 
-newWin = window.open(
-  "http://127.0.0.1:5500/index.html#",
-  "copperPro",
-  "resizable"
-);
-
 // Novelties Slider
 
 const swiperNovelties = new Swiper(".novelties-swiper", {
@@ -150,9 +144,3 @@ const swiperFeedback = new Swiper(".feedback-swiper", {
     prevEl: ".feedback-swiper-button-prev",
   },
 });
-
-// newWin = window.open(
-//   "http://127.0.0.1:5500/index.html#",
-//   "copperPro",
-//   "resizable"
-// );
