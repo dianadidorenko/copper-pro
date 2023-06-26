@@ -1,197 +1,400 @@
-@import url(style.scss);
-.news {
-  padding-bottom: 78px;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about-us.css" />
+    <link rel="stylesheet" href="news.css" />
+    <title>Catalog</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="top-up" class="header">
+        <div class="header__container">
+          <a href="index.html">
+            <img src="img/INDEX/logo.svg" class="logo" alt="Copper Pro Logo"
+          /></a>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="catalog.html" class="menu__link">Каталог</a>
+              </li>
+              <li class="menu__item">
+                <a href="news.html" class="menu__link">Новости</a>
+              </li>
+              <li class="menu__item">
+                <a href="delivery.html" class="menu__link">Доставка</a>
+              </li>
+              <li class="menu__item">
+                <a href="about-us.html" class="menu__link">О нас</a>
+              </li>
+              <li class="menu__item">
+                <a href="contacts.html" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="icon-menu-block">
+            <a href="#"
+              ><img
+                src="img/INDEX/header-main/favorite-icon.svg"
+                class="favorite-icon"
+                alt="Favorite icon"
+              />
+            </a>
+            <a href="#"
+              ><img
+                src="img/INDEX/header-main/profile-icon.svg"
+                class="favorite-icon profile-icon-dekstop"
+                alt="Profile icon"
+              />
+              <img
+                src="img/INDEX/header-main//768px/profile-icon.svg"
+                class="favorite-icon profile-icon-mobile"
+                alt="Profile icon"
+              />
+            </a>
+            <a href="#" class="shopping-cart-link"
+              ><img
+                src="img/INDEX/header-main/shopping-cart-icon.svg"
+                class="favorite-icon shopping-cart-dekstop"
+                alt="Shopping Cart icon"
+              />
+              <img
+                src="img/ABOUT-US/header/1.svg"
+                class="quantity-number"
+                alt="Quantity number"
+              />
+              <img
+                src="img/INDEX/header-main/768px/shopping-cart-icon.svg"
+                class="favorite-icon-mobile"
+                alt="Shopping Cart icon"
+              />
+            </a>
+          </div>
+        </div>
 
-.news__container {
-  margin: 0;
-}
+        <!-- Burger Menu  -->
+        <div class="burger-menu">
+          <a href="#" class="burger-menu__button">
+            <span class="burger-menu__dots"></span
+            ><span class="burger-menu__lines"></span
+          ></a>
+          <nav class="burger-header-menu menu">
+            <ul class="burger-header-menu__list">
+              <li class="menu__item">
+                <a href="catalog.html" class="menu__link">Каталог</a>
+              </li>
+              <li class="menu__item">
+                <a href="news.html" class="menu__link">Новости</a>
+              </li>
+              <li class="menu__item">
+                <a href="delivery.html" class="menu__link">Доставка</a>
+              </li>
+              <li class="menu__item">
+                <a href="about-us.html" class="menu__link">О нас</a>
+              </li>
+              <li class="menu__item">
+                <a href="contacts.html" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+            <div class="burger-menu-icon-menu-block">
+              <a href="#"
+                ><img
+                  src="img/INDEX/header-main/768px/favorite-icon.svg"
+                  class="burger-menu-favorite-icon"
+                  alt="Favorite icon"
+                />
+              </a>
+              <a href="#"
+                ><img
+                  src="img/INDEX/header-main/768px/shopping-cart-icon.svg"
+                  class="burger-menu-favorite-icon"
+                  alt="Shopping Cart icon"
+                />
+              </a>
+              <a href="#"
+                ><img
+                  src="img/INDEX/header-main/768px/profile-icon.svg"
+                  class="burger-menu-favorite-icon"
+                  alt="Profile icon"
+                />
+              </a>
+            </div>
+          </nav>
 
-.news-navigation__text-block {
-  padding-top: 39px;
-  padding-bottom: 31px;
-}
+          <div class="burger-menu__overlay"></div>
+        </div>
+        <!-- Burger Menu  -->
+      </header>
 
-.news-navigation__text-block p,
-.news-navigation__text-block a {
-  width: 180px;
-  display: block;
-}
+      <main class="page">
+        <section class="page__news news">
+          <div class="news__container">
+            <div class="news-navigation__text-block">
+              <a href="index.html">
+                <p class="news-navigation__navigation">
+                  Главная / <span>Новости</span>
+                </p></a
+              >
+              <h1 class="news-navigation__title">Новости</h1>
+            </div>
+            <div class="news__items">
+              <div class="news__item">
+                <div class="news__item-image-block">
+                  <img
+                    src="img/NEWS/01.png"
+                    alt="Эфирные масла для улучшения сна"
+                  />
+                  <h3>Эфирные масла для улучшения сна</h3>
+                  <p>27.10.21</p>
+                </div>
+                <p class="news__item-text">
+                  Пользу эфирных масел трудно переоценить. Они, безусловно,
+                  полезны для человека, но если говорить о домашних животных, то
+                  здесь возникают некоторые нюансы. Необходимо строго
+                  придерживаться определенных правил....
+                </p>
+                <div class="news__read-more-block">
+                  <a href="#"> <p class="news__read-more">Читать больше</p></a>
+                  <img
+                    src="img/INDEX/why-us/arrow-down-copper-icon.svg"
+                    alt="Arrow Down Icon"
+                  />
+                </div>
+              </div>
+              <div class="news__item">
+                <div class="news__item-image-block">
+                  <img
+                    src="img/NEWS/02.png"
+                    alt="Эфирные масла для улучшения сна"
+                  />
+                  <h3>Эфирные масла для улучшения сна</h3>
+                  <p>27.10.21</p>
+                </div>
+                <p class="news__item-text">
+                  Пользу эфирных масел трудно переоценить. Они, безусловно,
+                  полезны для человека, но если говорить о домашних животных, то
+                  здесь возникают некоторые нюансы. Необходимо строго
+                  придерживаться определенных правил....
+                </p>
+                <div class="news__read-more-block">
+                  <a href="#"> <p class="news__read-more">Читать больше</p></a>
+                  <img
+                    src="img/INDEX/why-us/arrow-down-copper-icon.svg"
+                    alt="Arrow Down Icon"
+                  />
+                </div>
+              </div>
+              <div class="news__item">
+                <div class="news__item-image-block">
+                  <img
+                    src="img/NEWS/03.png"
+                    alt="Эфирные масла для улучшения сна"
+                  />
+                  <h3>Эфирные масла для улучшения сна</h3>
+                  <p>27.10.21</p>
+                </div>
+                <p class="news__item-text">
+                  Пользу эфирных масел трудно переоценить. Они, безусловно,
+                  полезны для человека, но если говорить о домашних животных, то
+                  здесь возникают некоторые нюансы. Необходимо строго
+                  придерживаться определенных правил....
+                </p>
+                <div class="news__read-more-block">
+                  <a href="#"> <p class="news__read-more">Читать больше</p></a>
+                  <img
+                    src="img/INDEX/why-us/arrow-down-copper-icon.svg"
+                    alt="Arrow Down Icon"
+                  />
+                </div>
+              </div>
+              <div class="news__item">
+                <div class="news__item-image-block">
+                  <img
+                    src="img/NEWS/04.png"
+                    alt="Эфирные масла для улучшения сна"
+                  />
+                  <h3>Эфирные масла для улучшения сна</h3>
+                  <p>27.10.21</p>
+                </div>
+                <p class="news__item-text">
+                  Пользу эфирных масел трудно переоценить. Они, безусловно,
+                  полезны для человека, но если говорить о домашних животных, то
+                  здесь возникают некоторые нюансы. Необходимо строго
+                  придерживаться определенных правил....
+                </p>
+                <div class="news__read-more-block">
+                  <a href="#"> <p class="news__read-more">Читать больше</p></a>
+                  <img
+                    src="img/INDEX/why-us/arrow-down-copper-icon.svg"
+                    alt="Arrow Down Icon"
+                  />
+                </div>
+              </div>
+              <div class="news__item">
+                <div class="news__item-image-block">
+                  <img
+                    src="img/NEWS/01.png"
+                    alt="Эфирные масла для улучшения сна"
+                  />
+                  <h3>Эфирные масла для улучшения сна</h3>
+                  <p>27.10.21</p>
+                </div>
+                <p class="news__item-text">
+                  Пользу эфирных масел трудно переоценить. Они, безусловно,
+                  полезны для человека, но если говорить о домашних животных, то
+                  здесь возникают некоторые нюансы. Необходимо строго
+                  придерживаться определенных правил....
+                </p>
+                <div class="news__read-more-block">
+                  <a href="#"> <p class="news__read-more">Читать больше</p></a>
+                  <img
+                    src="img/INDEX/why-us/arrow-down-copper-icon.svg"
+                    alt="Arrow Down Icon"
+                  />
+                </div>
+              </div>
+              <div class="news__item">
+                <div class="news__item-image-block">
+                  <img
+                    src="img/NEWS/02.png"
+                    alt="Эфирные масла для улучшения сна"
+                  />
+                  <h3>Эфирные масла для улучшения сна</h3>
+                  <p>27.10.21</p>
+                </div>
+                <p class="news__item-text">
+                  Пользу эфирных масел трудно переоценить. Они, безусловно,
+                  полезны для человека, но если говорить о домашних животных, то
+                  здесь возникают некоторые нюансы. Необходимо строго
+                  придерживаться определенных правил....
+                </p>
+                <div class="news__read-more-block">
+                  <a href="#"> <p class="news__read-more">Читать больше</p></a>
+                  <img
+                    src="img/INDEX/why-us/arrow-down-copper-icon.svg"
+                    alt="Arrow Down Icon"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="catalog-gallery-pagination">
+              <img
+                src="img/CATALOG/Gallery/arrow-grey-left.svg"
+                alt="Arrow Left Icon"
+              />
+              <a href="#"><p class="active">1</p></a>
+              <a href="#"><p>2</p></a>
+              <a href="#"><p>3</p></a>
+              <a href="#"><p>4</p></a>
+              <img
+                src="img/CATALOG/Gallery/arrow-grey-right.svg"
+                alt="Arrow Left Icon"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
 
-.news-navigation__navigation {
-  font-family: "Mont Light";
-  font-size: 18px;
-  line-height: 96.4%;
-  color: var(--secondary-color);
-}
-.news-navigation__navigation span {
-  font-family: "Mont SemiBold";
-}
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__body">
+            <div class="footer__body-left-part">
+              <a href="index.html">
+                <img src="img/INDEX/footer/logo.svg" alt="Copper Pro Logo"
+              /></a>
+              <p class="footer__body-left-part-copy">
+                © 2021 “Copper Pro” Все права защищены
+              </p>
+              <p class="footer__body-left-part-politics">
+                Политика конфиденциальности
+              </p>
+            </div>
 
-.news-navigation__title {
-  font-family: "Lighthaus Regular";
-  padding-top: 23px;
-  font-size: 50px;
-  line-height: 105.9%;
-  color: var(--secondary-color);
-}
+            <div class="footer__body-right-part">
+              <nav class="footer__menu">
+                <ul class="footer__list">
+                  <p class="footer__menu-title">Навигация</p>
+                  <li class="footer__item">
+                    <a href="catalog.html" class="footer__link">Каталог</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="news.html" class="footer__link">Новости</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="delivery.html" class="footer__link">Доставка</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="about-us.html" class="footer__link">О нас</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="contacts.html" class="footer__link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
 
-.news__items {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 30px 1fr;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 34px 30px;
-  padding-bottom: 44px;
-}
+              <nav class="footer__menu">
+                <ul class="footer__list">
+                  <p class="footer__menu-title">Каталог</p>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Для эфирных масел</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Для гидролатов</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Медная посуда</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Аксессуары из меди</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Индивидуальный заказ</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Скидки и предложения</a>
+                  </li>
+                </ul>
+              </nav>
 
-.news__item-image-block {
-  position: relative;
-}
-
-.news__item-image-block p {
-  padding: 9px 14px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-family: "Mont Bold";
-  font-size: 18px;
-  line-height: 96.4%;
-  background: linear-gradient(150deg, #5e3928 0%, #e4a16f 91.15%);
-}
-
-.news__item h3 {
-  position: absolute;
-  left: 28px;
-  bottom: 26px;
-  font-family: "Mont Regular";
-  font-size: 20px;
-  line-height: 96.4%;
-}
-
-.news__item-text {
-  padding-top: 26px;
-  padding-bottom: 20px;
-  max-width: 617px;
-  font-family: "Mont Light";
-  font-size: 14px;
-  line-height: 132.4%;
-  color: var(--secondary-color);
-}
-
-.news__read-more-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 7px;
-     -moz-column-gap: 7px;
-          column-gap: 7px;
-}
-
-.news__read-more {
-  font-family: "Mont Heavy";
-  background: linear-gradient(65.81deg, #5e3928 -24.09%, #e4a16f 104.02%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-
-.catalog-gallery-pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 9px;
-     -moz-column-gap: 9px;
-          column-gap: 9px;
-}
-
-.catalog-gallery-pagination .active {
-  color: white;
-  padding: 12px 14px;
-  background: linear-gradient(-92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
-}
-
-.catalog-gallery-pagination p {
-  padding: 12px;
-  font-family: "Mont SemiBold";
-  color: #b3b9b8;
-  font-size: 25px;
-  line-height: 96.4%;
-  border: 1px solid #b3b9b8;
-}
-
-.catalog-gallery-pagination img {
-  padding: 15px 10px;
-  border: 1px solid #b3b9b8;
-}
-
-@media (max-width: 1800px) {
-  .news__container {
-    padding: 0 49px;
-  }
-  .news__items {
-    place-items: center;
-  }
-}
-@media (max-width: 1500px) {
-  .news__item-image-block img {
-    max-width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-@media (max-width: 1024px) {
-  .news__items {
-    -ms-grid-columns: (1fr)[1];
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media (max-width: 768px) {
-  .news-navigation__text-block {
-    padding-top: 30px;
-    padding-bottom: 34px;
-  }
-  .news-navigation__title {
-    font-size: 60px;
-  }
-}
-@media (max-width: 550px) {
-  .news__container {
-    padding: 0 15px;
-  }
-  .news-navigation__navigation {
-    font-size: 16px;
-  }
-  .news-navigation__title {
-    font-size: 24px;
-  }
-  .news__item h3 {
-    font-size: 14px;
-    bottom: 12px;
-    left: 10px;
-  }
-  .news__item-text {
-    padding-top: 17px;
-    padding-bottom: 17px;
-  }
-  .news__items {
-    gap: 20px 0;
-  }
-  .news__read-more-block {
-    padding-bottom: 16px;
-    border-bottom: 1px solid #ebebeb;
-  }
-  .news__item-image-block img {
-    min-height: 107px;
-  }
-}
+              <div class="footer__menu contacts">
+                <p class="contacts-title">Контакты</p>
+                <p class="contacts-address">Бажана 8-Б, Киев, 02132 Украина</p>
+                <a href="#"
+                  ><p class="contacts-phone">+38 (096) 990 67 56</p></a
+                >
+                <a href="#">
+                  <p class="contacts-mail">a.alambik@gmail.com</p></a
+                >
+                <div class="contacts-socs">
+                  <a href="#">
+                    <img src="img/INDEX/footer/tw.svg" alt="Twitter Icon" />
+                  </a>
+                  <a href="#">
+                    <img src="img/INDEX/footer/fb.svg" alt="Facebook Icon" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="img/INDEX/footer/insta.svg"
+                      alt="Instagram Icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#top-up" class="text-up">ВВЕРХ</a>
+      </footer>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</html>
