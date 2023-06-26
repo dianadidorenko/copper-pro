@@ -1,0 +1,197 @@
+@import url(style.scss);
+.news {
+  padding-bottom: 78px;
+}
+
+.news__container {
+  margin: 0;
+}
+
+.news-navigation__text-block {
+  padding-top: 39px;
+  padding-bottom: 31px;
+}
+
+.news-navigation__text-block p,
+.news-navigation__text-block a {
+  width: 170px;
+  display: block;
+}
+
+.news-navigation__navigation {
+  font-family: "Mont Light";
+  font-size: 18px;
+  line-height: 96.4%;
+  color: var(--secondary-color);
+}
+.news-navigation__navigation span {
+  font-family: "Mont SemiBold";
+}
+
+.news-navigation__title {
+  font-family: "Lighthaus Regular";
+  padding-top: 23px;
+  font-size: 50px;
+  line-height: 105.9%;
+  color: var(--secondary-color);
+}
+
+.news__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 34px 30px;
+  padding-bottom: 44px;
+}
+
+.news__item-image-block {
+  position: relative;
+}
+
+.news__item-image-block p {
+  padding: 9px 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: "Mont Bold";
+  font-size: 18px;
+  line-height: 96.4%;
+  background: linear-gradient(150deg, #5e3928 0%, #e4a16f 91.15%);
+}
+
+.news__item h3 {
+  position: absolute;
+  left: 28px;
+  bottom: 26px;
+  font-family: "Mont Regular";
+  font-size: 20px;
+  line-height: 96.4%;
+}
+
+.news__item-text {
+  padding-top: 26px;
+  padding-bottom: 20px;
+  max-width: 617px;
+  font-family: "Mont Light";
+  font-size: 14px;
+  line-height: 132.4%;
+  color: var(--secondary-color);
+}
+
+.news__read-more-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 7px;
+     -moz-column-gap: 7px;
+          column-gap: 7px;
+}
+
+.news__read-more {
+  font-family: "Mont Heavy";
+  background: linear-gradient(65.81deg, #5e3928 -24.09%, #e4a16f 104.02%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.catalog-gallery-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 9px;
+     -moz-column-gap: 9px;
+          column-gap: 9px;
+}
+
+.catalog-gallery-pagination .active {
+  color: white;
+  padding: 12px 14px;
+  background: linear-gradient(-92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+}
+
+.catalog-gallery-pagination p {
+  padding: 12px;
+  font-family: "Mont SemiBold";
+  color: #b3b9b8;
+  font-size: 25px;
+  line-height: 96.4%;
+  border: 1px solid #b3b9b8;
+}
+
+.catalog-gallery-pagination img {
+  padding: 15px 10px;
+  border: 1px solid #b3b9b8;
+}
+
+@media (max-width: 1800px) {
+  .news__container {
+    padding: 0 49px;
+  }
+  .news__items {
+    place-items: center;
+  }
+}
+@media (max-width: 1500px) {
+  .news__item-image-block img {
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 1024px) {
+  .news__items {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .news-navigation__text-block {
+    padding-top: 30px;
+    padding-bottom: 34px;
+  }
+  .news-navigation__title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 550px) {
+  .news__container {
+    padding: 0 15px;
+  }
+  .news-navigation__navigation {
+    font-size: 16px;
+  }
+  .news-navigation__title {
+    font-size: 24px;
+  }
+  .news__item h3 {
+    font-size: 14px;
+    bottom: 12px;
+    left: 10px;
+  }
+  .news__item-text {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+  .news__items {
+    gap: 20px 0;
+  }
+  .news__read-more-block {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ebebeb;
+  }
+  .news__item-image-block img {
+    min-height: 107px;
+  }
+}

@@ -3,6 +3,12 @@
   padding-top: 31px;
 }
 
+.catalog-navigation__text-block p,
+.catalog-navigation__text-block a {
+  width: 170px;
+  display: block;
+}
+
 .catalog-navigation__navigation {
   font-family: "Mont Light";
   font-size: 18px;

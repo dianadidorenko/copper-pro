@@ -62,6 +62,11 @@
   padding-top: 39px;
   padding-bottom: 159px;
 }
+.about-us__text-block p,
+.about-us__text-block a {
+  width: 170px;
+  display: block;
+}
 .about-us__navigation {
   font-family: "Mont Light";
   font-size: 18px;
@@ -486,12 +491,6 @@
 }
 
 // ========================================================================================
-.page__our-values {
-}
-.our-values {
-}
-.our-values__container {
-}
 .our-values .about-us-title {
   max-width: 292px;
 }
@@ -528,8 +527,6 @@
   display: flex;
   align-items: center;
   column-gap: 30px;
-}
-.our-values__body-right-part-values-item-image {
 }
 .our-values__body-right-part-values-item-text p {
   font-family: "Mont Book";

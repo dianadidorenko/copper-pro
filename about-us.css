@@ -65,6 +65,12 @@
   padding-bottom: 159px;
 }
 
+.about-us__text-block p,
+.about-us__text-block a {
+  width: 170px;
+  display: block;
+}
+
 .about-us__navigation {
   font-family: "Mont Light";
   font-size: 18px;
